@@ -16,19 +16,7 @@ function randomHole(holes){
     hole.append(moleImg)
 }
 
-
-
-
-function randomTime(min, max) {
-    return Math.round(Math.random() * (max - min) + min);
-    }
-    
-function appear() {
-        const time = randomTime(50, 1000);
-        const hole = randomHole(holes);
-        setInterval(hole,time)
-}   
-appear()
+randomHole(holes)
 
 let score = 0;
 moleImg.addEventListener("click",function(){
@@ -37,7 +25,7 @@ moleImg.addEventListener("click",function(){
 })
 
 moleImg.addEventListener("click", function (){
-    appear()
+    randomHole(holes)
     
 })
 
