@@ -1,15 +1,27 @@
+h1{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
 #bigbox{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    height: 100vh;
 
 }
 
 
-
-
-.mole{
-    height: 250px;
-    width: 275px;
+.hole{
+    display: inline-block;
+    background-image: url("Golf_hole.jpeg");
+    width: 200px;
+    height: 200px;
 }
+
+
