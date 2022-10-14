@@ -1,7 +1,7 @@
 const bigbox = document.querySelector('#bigbox')
 const moles = document.querySelectorAll(".mole")
 const holes = document.querySelectorAll('.hole')
-const timerId = document.querySelector ("#timerID")
+
 const moleImg = document.createElement('img')
 moleImg.style.width = '200px';
 moleImg.style.height = '200px';
@@ -37,25 +37,15 @@ moleImg.addEventListener("click",function(){
 })
 
 moleImg.addEventListener("click", function (){
-    randomHole(holes)
+    appear()
     
 })
 
-
-function countDown() {
-    currentTime--
-    timerId.textContent = currentTime
-   
-    if (currentTime == 0) {
-      clearInterval(countDownTimerId)
-      clearInterval(timerId)
-      alert('GAME OVER! Your final score is ' + result)
-    }
-   
-   }
-   
-   let countDownTimerId = setInterval(countDown, 1000)
-
+const reset = document.querySelector(".reset")
+reset.addEventListener("click",function(){
+    score = 0;
+    document.getElementById("score").innerHTML = score;
+})
 
 
 

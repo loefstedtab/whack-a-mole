@@ -1,10 +1,20 @@
-h1{
-    text-align: center;
+body{
+    background-image: url(bill-murray-as-carl-spackler-in-caddyshack-argo.jpeg);
 }
 
-h3{
+h1{
     text-align: center;
+    color: aliceblue;
 }
+
+h2{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    color: aliceblue;
+    margin-bottom: 50px;
+}
+
 
 #bigbox{
     display: flex;
@@ -12,7 +22,7 @@ h3{
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
 
 }
 
