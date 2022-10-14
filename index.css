@@ -1,0 +1,15 @@
+#bigbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+.mole{
+    height: 250px;
+    width: 275px;
+}
